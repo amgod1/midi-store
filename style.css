@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #FFC0C0;
     height: 100%;
@@ -21,7 +25,10 @@ body {
 
 .text:hover {
     opacity: 0.5;
-    cursor: default;
+}
+
+.text-edit:hover {
+    opacity: 0.5;
 }
 
 header {
@@ -96,7 +103,7 @@ p {
 footer {
     background-color: black;
     min-height: 60px;
-    margin: 0 0 auto;
+    margin: 25px 0 auto;
     display: flex;
     flex-wrap: wrap;
 }
@@ -119,7 +126,7 @@ footer {
     text-transform: uppercase;
 }
 
-a {
+.git-link {
     color: white;
     text-decoration: none;
 }
@@ -140,4 +147,50 @@ a {
 
 .author:hover {
     opacity: 0.5;
+}
+
+.main-article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 75vh;
+    width: 100%;
+    background-image: url('images/new-music.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+.quote {
+    padding-bottom: 120px;
+}
+
+.quote-text {
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.started-link {
+    color: white;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 900px) {
+    .quote-text {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .quote-text {
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .quote-text {
+        font-size: 25px;
+    }
 }
