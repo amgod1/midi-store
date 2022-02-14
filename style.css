@@ -23,16 +23,20 @@ body {
     font-size: 35px;
 }
 
+.text-edit {
+    font-size: 25px;
+}
+
 .text:hover {
     opacity: 0.5;
 }
 
 .text-edit:hover {
+    cursor: pointer;
     opacity: 0.5;
 }
 
 header {
-    
     background-color: black;
 }
 
@@ -71,15 +75,6 @@ header {
     margin-top: 25px;
 }
 
-.products-item {
-    box-shadow: 0;
-    transition: box-shadow 1s;
-}
-
-.products-item:hover {
-    box-shadow: 0px 0px 20px #A60000;
-}
-
 .list-text {
     text-align: center;
     font-size: 50px;
@@ -88,7 +83,11 @@ header {
 
 .images-keyboards {
     width: 300px;
-    border: 2px solid #FF8D8D;
+    transition: all 0.5s ease-out;
+}
+
+.images-keyboards:hover {
+    transform: scale(1.2);
 }
 
 .item-info {
@@ -97,7 +96,7 @@ header {
 }
 
 p {
-    margin-top: 5px;
+    cursor: default;
 }
 
 footer {
@@ -175,6 +174,55 @@ footer {
 .started-link {
     color: white;
     text-decoration: none;
+}
+
+.item-sale {
+    font-size: 20px;
+    position: absolute;
+    width: 60px;
+    height: 30px;
+    background-color: #A60000;
+    color: white;
+    text-align: center;
+    padding: 3px;
+    z-index: 100;
+}
+
+.item-price {
+    font-size: 20px;
+}
+
+.item-text-decor {
+    text-decoration: line-through;
+}
+
+.quick-view {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: white;
+    margin-top: 13px;
+}
+
+.quick-view-wrapper {
+    display: none;
+    position: absolute;
+    width: 300px;
+    height: 50px;
+    margin: -54px 0;
+    background: #FF8D8D;
+    opacity: .75;
+}
+
+.item-logo {
+    height: 187.5px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.item-logo:hover .quick-view-wrapper {
+    display: block;
 }
 
 @media screen and (max-width: 900px) {
