@@ -95,6 +95,11 @@ header {
     margin-top: 15px;
 }
 
+.item-info a {
+    text-decoration: none;
+    color: black;
+}
+
 p {
     cursor: default;
 }
@@ -219,6 +224,7 @@ footer {
     height: 187.5px;
     width: 100%;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .item-logo:hover .quick-view-wrapper {
